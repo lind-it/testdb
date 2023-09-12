@@ -1,9 +1,8 @@
 ﻿<?
     include $_SERVER["DOCUMENT_ROOT"] . "/php/config.php";
     include $_SERVER["DOCUMENT_ROOT"] . "/php/functions.php";
-    require 'smarty-4.3.2/libs/Smarty.class.php';
     require __DIR__ . '/vendor/autoload.php';
-
+    
     $mysqli = new mysqli(HOSTNAME, USERNAME, PASSWORD, DBNAME);
 
     if ($mysqli->connect_errno) {
@@ -39,7 +38,7 @@
         
     }
 
-    $smarty = new Smarty;
+    $smarty = new Smarty();
     $smarty->assign('array', $outputdata);
 
 ?>
