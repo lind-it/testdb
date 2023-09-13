@@ -12,10 +12,12 @@
 
                 <p class="card-text">
                     Стоимость: 
-                    {if empty($array[row].coast)}
+                    {if !empty($array[row].cost)}
+                        {$array[row].cost}&#8381;
+                    {else}
                         Не указано					
                     {/if}
-                    {$array[row].coast}&#8381;
+                    
                 </p>
 
                 <p class="card-text">
