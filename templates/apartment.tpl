@@ -12,38 +12,34 @@
 
                 <p class="card-text">
                     Стоимость: 
-                    {if !empty($array[row].coast)}
-                        {$array[row].coast}&#8381;
-                    {else} 
+                    {if empty($array[row].coast)}
                         Не указано					
                     {/if}
+                    {$array[row].coast}&#8381;
                 </p>
 
                 <p class="card-text">
                     Вид: 
-                    {if !empty($array[row].view)}
-                        {$array[row].view}
-                    {else} 
+                    {if empty($array[row].view)}
                         Не указано					
                     {/if}
+                    {$array[row].view}
                 </p>
 
                 <p class="card-text">
                     Материал:
-                    {if !empty($array[row].material)}
-                        {$array[row].material}
-                    {else} 
+                    {if empty($array[row].material)}
                         Не указано					
                     {/if}
+                    {$array[row].material}
                 </p>
 
                 <p class="card-text">
                     Тип дома: 
-                    {if !empty($array[row].home_type)}
-                        {$array[row].home_type}
-                    {else} 
+                    {if empty($array[row].home_type)}
                         Не указано					
                     {/if}
+                    {$array[row].home_type}
                 </p>
                 
                 <h5>Оисание:</h5>
@@ -51,11 +47,10 @@
 
                 <p class="card-text">
                     Телефон: 
-                    {if !empty($array[row].phone)}
-                        {$array[row].phone}
-                    {else} 
+                    {if empty($array[row].phone)}
                         Не указано					
                     {/if}
+                    {$array[row].phone}
                 </p>
                 
 
